@@ -8,6 +8,27 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="Logo.png" type="image/png" sizes="16x16">
 <style>
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+  
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}  
+  
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
 body {margin:0;height:2000px;}
 .icon-bar {
   position: fixed;
@@ -189,6 +210,8 @@ body {
   
   <div class="w3-container" id="services" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Experience</b></h1>
+    <div class="row">
+    <div class="column">
     <div class="flip-card">
     <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -200,7 +223,37 @@ body {
       <p>Role:Chip Design Verification Consultant</p>
     </div>
   </div>
+  </div>                             
 </div> 
+                               <div class="column">
+    <div class="flip-card">
+    <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Edveon.png" style="width:300px;height:300px;">   
+    </div>
+    <div class="flip-card-back">
+      <p>Company:Edveon Technologies Inc.</p>
+      <p>Location:Chennai, India</p>
+      <p>Role:Chip Design Verification Consultant</p>
+    </div>
+  </div>
+  </div>                             
+</div> 
+                               <div class="column">
+    <div class="flip-card">
+    <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Edveon.png" style="width:300px;height:300px;">   
+    </div>
+    <div class="flip-card-back">
+      <p>Company:Edveon Technologies Inc.</p>
+      <p>Location:Chennai, India</p>
+      <p>Role:Chip Design Verification Consultant</p>
+    </div>
+  </div>
+  </div>                             
+</div> 
+</div>                               
 </div>
 
   <div class="w3-container" id="designers" style="margin-top:75px">
