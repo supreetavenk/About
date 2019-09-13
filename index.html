@@ -82,6 +82,18 @@ body {font-size:16px;}
 .container {
   padding: 2px 16px;
 }
+  
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 
 <body>
@@ -288,8 +300,8 @@ body {font-size:16px;}
   </div>
   
   <h1 class="w3-xxxlarge w3-text-red"><b>Contact</b></h1>
-  <div id="col-1">
-  <div class="card">
+  <div class="row">
+  <div class="column">
   <img src="Profile.jpg" alt="Avatar" style="width:100%">
   <div class="container">
     <h4><b>Supreeta Venkatesan</b></h4> 
@@ -297,11 +309,11 @@ body {font-size:16px;}
   </div>
   </div>
   </div><div class="w3-container" id="contact" style="margin-top:75px">
-  <div id="col-2">
-  <h1>This is another half of a page</h1>
-  </div>                                                                   
-
-
+  </div>
+  <div class="column"></div>
+  </div>
+  <div class="card">
+                                                                 
 <!-- End page content -->
 </div>
 
