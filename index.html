@@ -82,6 +82,24 @@ body {font-size:16px;}
 .container {
   padding: 2px 16px;
 }
+
+#col-1 {
+  position: relative;
+  width: 50%;
+  float: left;
+  height: 100%;
+  background-color: #282828;
+  z-index: 1010101010
+}
+
+#col-2 {
+  position: relative;
+  width: 50%;
+  float: left;
+  height: 100%;
+  background-color: #0080ff;
+  z-index: 1010101010
+}  
 </style>
 
 <body>
@@ -287,15 +305,17 @@ body {font-size:16px;}
     </div>
   </div>
   
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact</b></h1>
+  <div id="col-1">
+  <h1 class="w3-xxxlarge w3-text-red"><b>Contact</b></h1>
   <div class="card">
   <img src="Profile.jpg" alt="Avatar" style="width:100%">
   <div class="container">
     <h4><b>Supreeta Venkatesan</b></h4> 
     <p>Masters in Computer Engineering</p> 
   </div>
-</div>
+  </div>
+  </div><div class="w3-container" id="contact" style="margin-top:75px">
+
 
 <!-- End page content -->
 </div>
