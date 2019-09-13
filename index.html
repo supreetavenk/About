@@ -27,6 +27,11 @@ body {margin:100;height:2000px;}
   font-size: 20px;
 }
 
+.highlight {
+    background-color: cyan;
+    font-weight: bold;
+}
+
 .icon-bar a:hover {
   background-color: #000;
 }
@@ -106,8 +111,18 @@ body {font-size:16px;}
 
   <div class="w3-container" style="margin-top:80px" id="showcase">
     <h1 class="w3-xxxlarge w3-text-red"><b>About</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <hr style="width:50px;border:5px solid red" class="w3-round"> 
   </div>
+  var classHighlight = 'highlight'; 
+var $thumbs = $('.thumbnail').click(function(e) {
+    e.preventDefault();
+    //run removeClass on every element
+    //if the elements are not static, you might want to rerun $('.thumbnail')
+    //instead of the saved $thumbs
+    $thumbs.removeClass(classHighlight);
+    //add the class to the currently clicked element (this)
+    $(this).addClass(classHighlight);
+});                                                              
   
   <div class="w3-row-padding">
     <div class="w3-half">
