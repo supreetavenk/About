@@ -129,29 +129,151 @@ td {
   border: 1px solid #dddddd;
 }
 
-a.button4{
- display:inline-block;
- padding:0.3em 1.2em;
- margin:0 0.1em 0.1em 0;
- border:0.16em solid rgba(255,255,255,0);
- border-radius:2em;
- box-sizing: border-box;
- text-decoration:none;
- font-family:'Roboto',sans-serif;
- font-weight:300;
- color:#FFFFFF;
- text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
- text-align:center;
- transition: all 0.2s;
+
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:700';
+
+$font:'Source Sans Pro', sans-serif;
+$primary:#FF0072;
+$second:#644cad;
+$third:#4426a8;
+  
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-a.button4:hover{
- border-color: rgba(255,255,255,1);
+
+html, body{
+    height:100%;
+    width: 100%;
 }
-@media all and (max-width:30em){
- a.button4{
-  display:block;
-  margin:0.2em auto;
- }
+
+body {
+  padding:0px;
+  margin:0;
+  font-family:$font;
+  background: #F5F0FF;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dark {
+  background:#24252A;
+}
+
+.flex {
+  min-height:50vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+a.bttn {
+  color:$primary;
+  text-decoration:none;
+  -webkit-transition:0.3s all ease;
+  transition:0.3s ease all;
+  &:hover {
+    color:#FFF;
+  }
+  &:focus {
+    color:#FFF;
+  }
+}
+
+.bttn {
+  font-size:18px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  display:inline-block;
+  text-align:center;
+  width:270px;
+  font-weight:bold;
+  padding:14px 0px;
+  border:3px solid $primary;
+  border-radius:2px;
+  position:relative;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+  &:before {
+    -webkit-transition:0.5s all ease;
+    transition:0.5s all ease;
+    position:absolute;
+    top:0;
+    left:50%;
+    right:50%;
+    bottom:0;
+    opacity:0;
+    content:'';
+    background-color:$primary;
+    z-index:-2;
+  }
+  &:hover {
+    &:before {
+      -webkit-transition:0.5s all ease;
+      transition:0.5s all ease;
+      left:0;
+      right:0;
+      opacity:1;
+    }
+  }
+  &:focus {
+    &:before {
+      transition:0.5s all ease;
+      left:0;
+      right:0;
+      opacity:1;
+    }
+  }
+}
+
+.bttn-dark {
+  font-size:18px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  display:inline-block;
+  text-align:center;
+  width:270px;
+  font-weight:bold;
+  padding:14px 0px;
+  border:3px solid $second;
+  border-radius:2px;
+  position:relative;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+  z-index:2;
+  &:before {
+    -webkit-transition:0.5s all ease;
+    transition:0.5s all ease;
+    position:absolute;
+    top:0;
+    left:50%;
+    right:50%;
+    bottom:0;
+    opacity:0;
+    content:'';
+    background-color:$second;
+    z-index:-1;
+  }
+  &:hover {
+    &:before {
+      -webkit-transition:0.5s all ease;
+      transition:0.5s all ease;
+      left:0;
+      right:0;
+      opacity:1;
+    }
+  }
+  &:focus {
+    &:before {
+      -webkit-transition:0.5s all ease;
+      transition:0.5s all ease;
+      left:0;
+      right:0;
+      opacity:1;
+    }
+  }
+}
+
 
 </style>
 </head>
@@ -189,7 +311,10 @@ a.button4:hover{
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
 <div class="w3-container" style="margin-top:80px" id="home">
-<a href="CV_Supreeta.pdf" class="button4" style="background-color:#4e9af1">Download Resume</a>
+
+<div class="flex">
+  <a href="CV_Supreeta.pdf" class="bttn">Continue</a>
+</div>
 <h1 class="w3-xxxlarge w3-text-red"><font color="#900"><b>About</b></font></h1>
 <hr style="width:50px;border:5px" class="w3-round">                                                            
 </div>                                                             
