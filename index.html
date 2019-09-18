@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body {margin:0;height:2000px;}
 .icon-bar {
@@ -143,6 +143,42 @@ td {
 
 .btn:hover {
   background-color: RoyalBlue;
+}  
+  
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
 }  
   
 </style>
@@ -333,24 +369,18 @@ td {
                                  
   <div class="w3-container" id="contact" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><font color="#900"><b>Contact</b></font></h1>
-    <hr style="width:50px;border:5px #900" class="w3-round">                                  
-    <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="Profile.jpg" style="width:300px;height:300px;">
-      <h1>Supreeta Venkatesan</h1>
-      <p>MS in Computer Engineering</p>
-      <p>University of Southern California</p>     
-    </div>
-    <div class="flip-card-back">
-       <img src="Map.png" style="width:300px;height:300px;">
-      <h3><font color="black">Stay in Touch</h1>
-      <p><font color="black">Address:<br>Apartment 9, 721 West 30th Street, Los Angeles, CA-90007</font></p>
-      <p><font color="black">Phone:<br>+1 213-448-2722</font></p>    
-      <p><font color="black">Email:<br>supreetavenk@gmail.com</font></p>      
-    </div>
+    <hr style="width:50px;border:5px" class="w3-round">                                  
+    <div class="card">
+  <img src="Profile.jpg" style="width:100%">
+  <h1>Supreeta Venkatesan</h1>
+  <p class="title">MS in Computer Engineering</p>
+  <p>Email: supreetavenk@gmail.com</p>
+  <p>Phone: +1 213-448-2722</p>
+  <p>Address: Apartment 9, 721 West 30th Street, Los Angeles, CA-90007</p>
   </div>
-</div>                                   
+  <p><button>Contact</button></p>
+</div>
+                             
   </div>
 
 <!-- End page content -->
